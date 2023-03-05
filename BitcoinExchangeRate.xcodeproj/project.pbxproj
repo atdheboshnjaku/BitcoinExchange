@@ -17,6 +17,8 @@
 		AD50BF5529B49F1E00FCF773 /* BitcoinExchangeRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD50BF5429B49F1E00FCF773 /* BitcoinExchangeRateTests.swift */; };
 		AD50BF5F29B49F1E00FCF773 /* BitcoinExchangeRateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD50BF5E29B49F1E00FCF773 /* BitcoinExchangeRateUITests.swift */; };
 		AD50BF6129B49F1E00FCF773 /* BitcoinExchangeRateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD50BF6029B49F1E00FCF773 /* BitcoinExchangeRateUITestsLaunchTests.swift */; };
+		AD50BF7129B4A9E500FCF773 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD50BF7029B4A9E500FCF773 /* CoinManager.swift */; };
+		ADC6BC4429B5273200AD003F /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6BC4329B5273200AD003F /* CoinData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		AD50BF5A29B49F1E00FCF773 /* BitcoinExchangeRateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinExchangeRateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD50BF5E29B49F1E00FCF773 /* BitcoinExchangeRateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinExchangeRateUITests.swift; sourceTree = "<group>"; };
 		AD50BF6029B49F1E00FCF773 /* BitcoinExchangeRateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinExchangeRateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD50BF7029B4A9E500FCF773 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		ADC6BC4329B5273200AD003F /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,11 @@
 		AD50BF3929B49F1D00FCF773 /* BitcoinExchangeRate */ = {
 			isa = PBXGroup;
 			children = (
+				AD50BF6F29B4A9B500FCF773 /* Model */,
+				AD50BF6E29B4A9AF00FCF773 /* View */,
+				AD50BF6D29B4A9AA00FCF773 /* Controller */,
 				AD50BF3A29B49F1D00FCF773 /* AppDelegate.swift */,
 				AD50BF3C29B49F1D00FCF773 /* SceneDelegate.swift */,
-				AD50BF3E29B49F1D00FCF773 /* ViewController.swift */,
-				AD50BF4029B49F1D00FCF773 /* Main.storyboard */,
 				AD50BF4629B49F1E00FCF773 /* Assets.xcassets */,
 				AD50BF4829B49F1E00FCF773 /* LaunchScreen.storyboard */,
 				AD50BF4B29B49F1E00FCF773 /* Info.plist */,
@@ -128,6 +133,31 @@
 				AD50BF6029B49F1E00FCF773 /* BitcoinExchangeRateUITestsLaunchTests.swift */,
 			);
 			path = BitcoinExchangeRateUITests;
+			sourceTree = "<group>";
+		};
+		AD50BF6D29B4A9AA00FCF773 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD50BF3E29B49F1D00FCF773 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD50BF6E29B4A9AF00FCF773 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD50BF4029B49F1D00FCF773 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD50BF6F29B4A9B500FCF773 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD50BF7029B4A9E500FCF773 /* CoinManager.swift */,
+				ADC6BC4329B5273200AD003F /* CoinData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC6BC4429B5273200AD003F /* CoinData.swift in Sources */,
 				AD50BF3F29B49F1D00FCF773 /* ViewController.swift in Sources */,
 				AD50BF3B29B49F1D00FCF773 /* AppDelegate.swift in Sources */,
 				AD50BF4529B49F1D00FCF773 /* BitcoinExchangeRate.xcdatamodeld in Sources */,
 				AD50BF3D29B49F1D00FCF773 /* SceneDelegate.swift in Sources */,
+				AD50BF7129B4A9E500FCF773 /* CoinManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
