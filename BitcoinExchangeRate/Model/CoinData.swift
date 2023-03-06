@@ -8,7 +8,7 @@
 import Foundation
 
 struct CoinData: Decodable {
-    
+    //rate from API
     let rate: Double
     
 }

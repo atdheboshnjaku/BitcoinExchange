@@ -65,7 +65,6 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         print(coinManager.currencyArray[row])
         let selectedCurrency = coinManager.currencyArray[row]
         coinManager.getCoinPrice(for: selectedCurrency)
-        //currencyLabel.text = coinManager.currencyArray[row]
     }
     
 }
